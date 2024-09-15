@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvestWise - Mutual Funds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mutualfunds.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Invest<span>Wise</span> Mutual Funds</h1>
+      <ul>
+        <li><a href="#funds">Mutual Funds</a></li>
+        <li><a href="#performance">Performance</a></li>
+        <li><a href="#invest">Invest Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Grow Your Wealth with Top Mutual Funds</h2>
+      <p>Invest in professionally managed mutual funds tailored to your financial goals.</p>
+      <a href="#funds" class="btn btn-primary">Explore Funds</a>
+    </div>
+    <div class="hero-image">
+      <img src="mutual-funds.jpg" alt="Mutual Funds Hero">
+    </div>
+  </section>
+
+  <!-- Mutual Funds Section -->
+  <section id="funds" class="container">
+    <h2>Top Performing Mutual Funds</h2>
+    <table class="fund-table">
+      <thead>
+        <tr>
+          <th>Fund Name</th>
+          <th>Category</th>
+          <th>Risk Level</th>
+          <th>1 Year Return</th>
+          <th>3 Year Return</th>
+          <th>Invest</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vanguard Growth Fund</td>
+          <td>Equity</td>
+          <td class="risk-high">High</td>
+          <td>15.87%</td>
+          <td>45.23%</td>
+          <td><button class="btn btn-secondary" onclick="investFund('Vanguard Growth Fund')">Invest</button></td>
+        </tr>
+        <tr>
+          <td>Fidelity Balanced Fund</td>
+          <td>Hybrid</td>
+          <td class="risk-medium">Medium</td>
+          <td>9.45%</td>
+          <td>32.18%</td>
+          <td><button class="btn btn-secondary" onclick="investFund('Fidelity Balanced Fund')">Invest</button></td>
+        </tr>
+        <!-- More funds can be added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Performance Section -->
+  <section id="performance" class="container">
+    <h2>Performance Overview</h2>
+    <div class="performance-graph">
+      <img src="grapgh2.jpg" alt="Performance Graph">
+    </div>
+  </section>
+
+  <!-- Investment Section -->
+  <section id="invest" class="container">
+    <h2>Start Investing in Mutual Funds</h2>
+    <div class="invest-box">
+      <div class="invest-input">
+        <label for="fundName">Mutual Fund</label>
+        <input type="text" id="fundName" placeholder="e.g., Vanguard Growth Fund">
+      </div>
+      <div class="invest-input">
+        <label for="investmentAmount">Investment Amount ($)</label>
+        <input type="number" id="investmentAmount" placeholder="Enter amount">
+      </div>
+      <div class="invest-buttons">
+        <button class="btn btn-primary" onclick="makeInvestment()">Invest Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 InvestWise. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="mutualfunds.js"></script>
+</body>
+</html>

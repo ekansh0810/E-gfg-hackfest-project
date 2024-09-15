@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvestWise - Smarter Investments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Invest<span>Wise</span></h1></div>
+      <ul>
+        <div class="container"><li><a href="#dashboard">Dashboard</a></li></div>
+        <div class="container"><li><a href="#profile">Profile</a></li></div>
+        <div class="container"><li><a href="#refer">Refer & Earn</a></li></div>
+        <div class="container"><li><a href="#payment">Payment</a></li></div>
+        <div class="container"><li><a href="#chatbox">Chat</a></li></div>
+      </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Invest Smarter, Live Better</h2>
+      <p>Join InvestWise and take control of your financial future with personalized investment opportunities.</p>
+      <a href="#signup" class="btn btn-primary">Get Started</a>
+    </div>
+    <div class="hero-image">
+      <img src="inv4.jpg" alt="Investment Hero">
+    </div>
+  </section>
+
+  <!-- Sign Up Form -->
+  <section id="signup" class="container">
+    <div class="form-card">
+      <h2>Create Your Free Account</h2>
+      <form id="signup-form">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+        <label><input type="checkbox" id="terms"> I agree to the terms and conditions</label><br>
+        <center><button type="submit" class="btn btn-primary">Sign Up</button></center>
+      </form>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="container">
+    <h2>Investment Dashboard</h2>
+    <div class="investment-sections">
+      <div class="section-card">
+        <h3>Stocks</h3>
+        <p>Check real-time stock prices and trends.</p>
+        <a href="stocks.html"><button class="btn btn-secondary">Buy/Sell</button></a>
+      </div>
+      <div class="section-card">
+        <h3>Mutual Funds</h3>
+        <p>Explore various mutual funds.</p>
+        <a href="mutualfunds.html"><button class="btn btn-secondary">Invest</button></a>
+      </div>
+      <div class="section-card">
+        <h3>Bonds</h3>
+        <p>View government and corporate bonds.</p>
+        <button class="btn btn-secondary">Invest</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile Page -->
+  <section id="profile" class="container">
+    <h2>Your Profile</h2>
+    <div class="profile-info">
+      <p><strong>Full Name:</strong> <span id="profileFullName"></span></p>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+      <p><strong>Portfolio:</strong></p>
+      <ul>
+        <li>Stocks: <span id="stockInvestments"></span></li>
+        <li>Mutual Funds: <span id="mutualFundInvestments"></span></li>
+        <li>Bonds: <span id="bondInvestments"></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Refer and Earn Section -->
+  <section id="refer" class="container">
+    <h2>Refer & Earn</h2>
+    <p>Invite friends and earn rewards! Share your referral link:</p>
+    <div class="referral">
+      <a href="refer.html"><button onclick="copyReferralLink()" class="btn btn-secondary">Copy Link</button></a>
+    </div>
+  </section>
+
+  <!-- Payment Section -->
+  <section id="payment" class="container">
+    <h2>Make a Payment</h2>
+    <p>Enter the amount you'd like to invest:</p>
+    <input type="number" id="paymentAmount" placeholder="Amount">
+    <a href="pay-gateway.html"><button onclick="makePayment()" class="btn btn-primary">Make Payment</button></a>
+  </section>
+
+  <!-- Chatbox -->
+  <section id="chatbox" class="container">
+    <h2>Live Chat Support</h2>
+    <div id="chatMessages"></div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message here">
+      <button onclick="sendMessage()" class="btn btn-secondary">Send</button>
+    </div>
+  </section> 
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 InvestWise. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1017;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #004d99;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 span {
+    color: #ffcc00;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #14171d;
+    color: white;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70vh;
+    margin-right: 10px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .hero a {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    color: #004d99;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .hero a:hover {
+    background-color: #ff9933;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mutual Funds Table */
+  .fund-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    color: white;
+  }
+  
+  .fund-table th, .fund-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .fund-table th {
+    background-color: #004d99;
+    color: white;
+  }
+  
+  .fund-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .risk-high {
+    color: #d9534f;
+  }
+  
+  .risk-medium {
+    color: #f0ad4e;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    color: #004d99;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff9933;
+  }
+  
+  /* Performance Section */
+  .performance-graph {
+    margin-top: 40px;
+  }
+  
+  .performance-graph img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Investment Section */
+  .invest-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .invest-input {
+    flex: 1;
+  }
+  
+  .invest-input input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .invest-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
